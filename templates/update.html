@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block body %}
+<div class="container my-5 aceT" >
+    
+    <form action="/update/{{note.sno}}" method="POST" >
+        <div class="mb-3">
+            <label for="title" class="form-label">Title </label>
+            <input type="text" class="form-control" name="title" value="{{note.title}}" id="title" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label for="desc" class="form-label">Description</label>
+            <input type="text" name="desc" class="form-control" value="{{note.desc}}" id="desc">
+        </div>
+        <button  type="submit" class="btn btn-dark">Submit</button>
+    </form>
+</div>
+{% endblock body %}

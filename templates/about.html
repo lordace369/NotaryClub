@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block body %}
+<h1 class="text-center">About Notary...</h1>
+<div class="aceBox">
+
+    <div class="aceCard">
+        <img src="{{ url_for('static', filename='notary.png') }}" class="ace-img alt="...">
+        <h5 class="ace-title text-center">Notary by Ayush Lingwal</h5>
+        <p class="text-center aceP">
+            Notary is a CRUD(create,read,update,delete) application which is made with the language Python and it's microframework Flask.
+            Use of Technologies in Notary:
+        </p>
+            <ol " >
+
+                <li>Python</li>
+                <li>Flask</li>
+                <li>Flask_SQLAlchemy</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Bootstrap classes</li>
+            </ol>
+    
+    </div>
+</div>
+
+
+    
+{% endblock body %}
